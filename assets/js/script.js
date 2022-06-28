@@ -26,7 +26,7 @@ var generatePassword = function() {
   //prompting the user for the types of characters required in the password and making sure at least one is chosen
   var passwordTypes = prompt("What types of characters should be in your password? Your options are lowercase letters, uppercase letters, numbers, and special characters. Please separate your choices with commas.");
   //forcing the user to pick at least one character type
-  while (passwordTypes == null) {
+  while (passwordTypes.length == 0) {
     passwordTypes = prompt("Please choose at least one of the following character types: lowercase letters, uppercase letters, numbers, and special characters.");
   }
   //splitting all choices into an array
